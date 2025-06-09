@@ -1,0 +1,25 @@
+;;
+;; mobilepi.txt puttyauto script file
+;;
+;; log in to the mobilepi Raspberry Pi box
+;;
+
+hostname = roastick
+username = localadm
+password = [LINUX]
+prompt   = localadm@roastick:~ $
+
+putty
+
+send    uname -a
+wait    prompt
+
+send    grep '^root:' /etc/passwd
+wait    prompt
+
+send    cat /etc/resolv.conf
+wait    prompt
+
+screenshot
+
+send    exit
