@@ -36,7 +36,9 @@ You will need the following set up before you try running the `puttyauto.py` pro
     
 ### Python 3.9 or later installed
 
-You can install Python from the Microsoft Store or by visiting:
+You can install Python from the Microsoft Store.
+
+Or you can download an installer package by visiting:
     
 [Python Releases for Windows](https://www.python.org/downloads/windows/)
 
@@ -62,9 +64,9 @@ Open a command prompt and run:
 pip3 install pyautogui
 ```
 
-This will install the PyAudoGUI Pyton package and several other Python packages that are dependencies.
+This will install the PyAutoGUI Pyton package and several other Python packages that are required dependencies.
 
-### Download PuTTY version 0.93
+### Download PuTTY version 0.83
 
 Visit:
     
