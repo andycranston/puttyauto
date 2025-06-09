@@ -1,0 +1,19 @@
+;;
+;; pduraritan.txt puttyauto script file
+;;
+;; log in to a Raritan intelligent PDU
+;;
+
+hostname = px3rack
+username = admin
+password = [RARITAN]
+prompt   = #
+
+putty
+
+send    show pdu
+wait    prompt
+
+screenshot
+
+send    exit
