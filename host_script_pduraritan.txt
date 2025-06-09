@@ -7,7 +7,7 @@
 hostname = px3rack
 username = admin
 password = [RARITAN]
-prompt   = #
+prompt   = [px3rack] #
 
 putty
 
