@@ -74,13 +74,33 @@ Visit:
 
 and under "Alternative binary files" download the 64-bit x86 `putty.exe` executable.
 
-Copy it to the directory where you have downloads the puttyauto.py and other supporting files.
+Copy it to the directory where you have downloaded the puttyauto.py and other supporting files.
 
 Rename the file from `putty.exe` to `putty-0-83.exe` as follows:
     
 ```
 rename putty.exe putty-0-83.exe
 ```
+
+Run putty as follows:
+    
+```
+putty-0-83.exe
+```
+
+On the PuTTY Configuration screen under Category click "Window".
+
+Ensure columns are set to 80 and rows are set to 24 as follows:
+    
+![Columns set to 80 and rows set to 24](README-puttyconfig-window.png "Window PuTTY Configuration")
+
+Next on the PuTTY Configuration screen under Category click "Appearance" which is under "Window".
+
+Ensure the font selection is "Fixedsys" with a point size of 12 as follows:
+    
+
+
+
 
 
 
