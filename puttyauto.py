@@ -1,5 +1,5 @@
 #
-# @(!--#) puttyauto.py, version 015, 09-june-2025
+# @(!--#) puttyauto.py, version 016, 10-june-2025
 #
 # automate a putty session
 #
@@ -146,7 +146,8 @@ SSH_PORT = "22"
 
 POLL_INTERVAL = 0.5
 
-PUTTY_EXECUTABLE_FILENAME = 'C:\\andyc\\projects\\puttyauto\\putty-0-83.exe'
+### PUTTY_EXECUTABLE_FILENAME = 'C:\\andyc\\projects\\puttyauto\\putty-0-83.exe'
+PUTTY_EXECUTABLE_FILENAME = 'putty-0-83.exe'
 
 PUTTY_CONFIG_ICON_FILENAME = 'puttyconfigicon.bmp'
 
@@ -299,7 +300,8 @@ def dragconfigwindow(region):
 ########################################################################
 
 def dragtermwindow(region):
-    dragwindowtopleft(region, 350, -15, 352, 17)
+    ### dragwindowtopleft(region, 350, -15, 352, 17)
+    dragwindowtopleft(region, 350, -15, 352 + 72, 17 + 80)
 
     return
 
@@ -346,7 +348,7 @@ def clickwarningnobutton(region):
 def screenlines(includeblanks=True):
     global cmap
 
-    puttyterm = pyautogui.screenshot(region = (2, 32, CMAP_WIDE * 80, CMAP_TALL * 24))
+    puttyterm = pyautogui.screenshot(region = (2 + 72, 32 + 80, CMAP_WIDE * 80, CMAP_TALL * 24))
     
     width, height = puttyterm.size
     
@@ -453,8 +455,6 @@ def invokeputty(va):
     if index == -1:
         fatalerror('PuTTY session failed to start or is not visible on screen')
 
-    # dragconfigwindow(region)
-    
     portnumber = SSH_PORT
     
     if ':' in va['hostname']:
@@ -482,11 +482,7 @@ def invokeputty(va):
     # print(region)
 
     if index == 1:
-        # pyautogui.moveTo(region[0], region[1])
-        # dragsecuritywarning(region)
         clickwarningnobutton(region)
-
-    # pyautogui.moveTo(1, 1)
 
     index, region = waitfor([ PUTTY_LOGIN_ICON_FILENAME ])
 
