@@ -121,7 +121,7 @@ Gather the following information about your host:
     
 + IP address or resolvable hostname of the host
 + The username to login as
-+ The password to supply to successful login (keep this to yourself for obvious reasons)
++ The password to supply to successfully login (keep this to yourself for obvious reasons)
 + The Linux prompt that gets displayed after a successful login
 
 For example I have a Linux host called "roastick" (it stands for "Router On A STICK" :-) 
@@ -197,7 +197,7 @@ After running this set command I would run:
 cls
 ```
 
-to clear the screen just incase someone might look over your shoulder.
+to clear the screen just in case someone might look over your shoulder.
 
 Now, at long last, run:
     
