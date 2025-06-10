@@ -98,6 +98,26 @@ Next on the PuTTY Configuration screen under Category click "Appearance" which i
 
 Ensure the font selection is "Fixedsys" with a point size of 12 as follows:
     
+![Font set to Fixedsys with point size 12](README-puttyconfig-appearance.png "Appearance PuTTY Configuration")
+
+Again on the PuTTY Configuration screen under Category click "Colours" which is under "Window".
+
+Click on "Default Background" and then ensure the RGB value is 0 for Red, 0 for Green and 0 for Blue as follows:
+    
+![Default Background colour set to RGB 0,0,0](README-puttyconfig-background.png "Default Background Colours")
+
+Finally on the PuTTY Configuration screen under Category click "Session".
+
+Click "Default Settings" and then click the "Save" button as follows:
+    
+![Save Default Settings](README-save-default-settings.png "Save Default Settings")
+
+Click the "Cancel" button to exit PuTTY.
+
+PuTTY is now configured to (hopefully!) work on a way that the puttyauto.py program can "visually understand".
+
+
+
 
 
 
